@@ -1,0 +1,49 @@
+body {    
+    background-color: #fff1e6;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 表單卡片 */
+.card {
+    background-color: #fafafa;
+    border-radius: 0.25rem;
+    font-size: 20px;
+}
+
+/* 表單 */
+form .form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #111;
+    width: 100%;
+    border-radius: 0;
+    padding: 0.25rem 0;
+}
+
+div .form-control:focus {
+    outline: none !important;
+    background-color: #fafafa;;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+div label, input {
+    font-size: 15px;
+}
+
+/* 學生證 */
+.card-container {
+    background-image: url('./images/school_logo_green.png'), linear-gradient(315deg, #d8c8ae, #eee7db);
+    background-repeat: no-repeat;
+    /* X, Y軸 */
+    background-position: 25% 55%;
+    border: 3px solid #432818;
+    max-width: 700px;
+    border-radius: 0.1rem;
+}
+
+.img-container {
+    max-width: 150px;
+    max-height: 175px;
+}
+
