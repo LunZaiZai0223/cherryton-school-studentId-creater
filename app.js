@@ -40,7 +40,6 @@ function createCardContent() {
         const p = document.createElement('p');
         p.append(InputsValuesArr[i]);
         cardInfoContent.append(p);
-        console.log(p);
         i++;
     }
     //最後一個name字體放大
@@ -67,6 +66,10 @@ function handler(event) {
         event.stopPropagation();
         form.classList.add('was-validated');
     } else {
+        if (cardInfoContent.innerHTML !== '' || imgContainer.innerHTML !== '') {
+            cardInfoContent.innerHTML = '';
+            imgContainer.innerHTML = '';
+        }
         cardContainer.classList.remove('d-none');
         createCardNum();
         createCardContent();
